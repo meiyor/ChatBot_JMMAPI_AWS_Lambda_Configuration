@@ -14,9 +14,10 @@ Here you can see a detailed pipeline schematic of the API architecture:
 
 Before anything be sure you have access and permissions for ECR, S3, Bedrock and Sagemaker services in AWS, an snapshot
 of the different permissions you need to configure this API are here. For any detail about configuration and deployment 
-please don't hesitate to contact me [juan.mayortorres@ex-staff.unitn.it](here).
+please don't hesitate to contact me [here](juan.mayortorres@ex-staff.unitn.it).
 
-![image](https://github.com/user-attachments/assets/1c47858e-0dc1-4042-bddf-46ec333d94af)
+![image](https://github.com/user-attachments/assets/7f3cdbfb-796e-44a1-88f2-5feb006dbcd0)
+
 
 Here are two FrontEnd examples of this execution.
 
