@@ -1,0 +1,35 @@
+#serverless.yml
+
+service: serverless-flask-container
+
+provider:
+  name: aws
+  region: us-east-1
+  ecr:
+    images:
+      appbedrockimage:
+        path: ./
+  vpc:
+    securityGroupIds:
+      - #insert_the_security_group_here
+    subnetIds:
+      - #subnet_private_id_1
+      - #subnet_private_id_2
+  environment:
+    DB_NAME: #name_db
+    MY_AWS_ACCESS_KEY_ID: #access_key
+    MY_AWS_SECRET_ACCESS_KEY: #secret_access_key
+    PASSWORD: #database_password
+    RDS_HOST: #rds_hosts
+    RDS_PORT: #rds_port
+    USER_NAME: #rds_username
+
+functions:
+  app:
+    image:
+      name: appbedrockimage
+    timeout: 30
+    events:
+      - http: ANY /
+      - http: 'ANY /{proxy+}'
+
