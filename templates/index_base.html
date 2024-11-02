@@ -9,29 +9,24 @@
 <body>
 <div class="div_main">
         <h1>Chatbot AWS API</h1>
-        <label for="">Username</label>
-        <input type="text" autocomplete="off" name="user" id="user" class="input_username" value=""><br/>
-        <label for="">Password</label> 
-        <input type="password" id="passw" class="input_password" value=""><br/>
         <br>
-        <button class="btn_login">Login</button><br/><br/>
+           <label for="">Username</label>
+           <input type="text" autocomplete="off" name="user" id="user" class="input_username" value=""> <br/>
+           <label for="">Password</label> 
+           <input type="password" id="passw" class="input_password" value=""><br/>
+           <button class="btn_login">Login</button><br/><br/>
         <h2>Login Status: <span class="span_result"> </span></h2>
-  </div>
-  <div class="input_image">
-     <h3>processed image:</h3><span class="span_images">  
-     <img id="img_input", src="", onerror="this.onerror=null; this.src='../static/images/gray.jpg'"></img>
-     </span>
   </div>
 <div class="container">
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v1.png" alt="image">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
                 </div>
                 <div class="chatbox__content--header">
                     <h4 class="chatbox__heading--header">ChatBot</h4>
-                    <p class="chatbox__description--header">This is ChatBot from Claude-3-Sonnet AWS endpoint..</p>
+                    <p class="chatbox__description--header">This is ChatBot from AWS endpoint..</p>
                 </div>
             </div>
             <div class="chatbox__messages">
@@ -41,8 +36,7 @@
             <div class="chatbox__footer">
                 <input type="text" placeholder="Write a message...">
                 <button class="chatbox__send--footer send__button">Send</button>
-                <input type="file" name="fileinput" id="fileinput" style="height: 40px; width:150px; ">
-                <button class="chatbox__send--footer search__button">Attach Image File</button>
+                <button class="chatbox__send__image--footer send__button">Attach Image File</button>
             </div>
         </div>
         <div class="chatbox__button", style="display:none;">
@@ -51,7 +45,7 @@
     </div>
 </div>
 <div class="logo">
-          <img src="{{ url_for('static', filename='/images/infinita_consulting_logo.png') }}" width = "300" height = "80">
+          <img src="https://images.saasworthy.com/superapi_43862_logo_1685945519_wlwor.jpg" width = "100" height = "75">
 </div>
 
     <script>
