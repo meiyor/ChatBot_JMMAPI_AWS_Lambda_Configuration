@@ -1,1 +1,1 @@
-# ChatBot_JMMAPI_AWS_Lambda_Confiiguration
+# ChatBot_JMMAPI_AWS_Lambda_Configuration
