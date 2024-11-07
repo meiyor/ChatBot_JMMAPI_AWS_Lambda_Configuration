@@ -28,4 +28,6 @@ Here are two FrontEnd examples of this execution.
 Please in order to execute and interact with the API, follow the instructions and sequences described in this explanatory video
 [https://drive.google.com/file/d/1WdxZR2jNM9fGjukFNCYyiFuWVK2nICHK/view?usp=sharing](https://drive.google.com/file/d/1WdxZR2jNM9fGjukFNCYyiFuWVK2nICHK/view?usp=sharing)
 
+You can also access the ngrok server address [https://appchatbot.ngrok.app](https://appchatbot.ngrok.app)
+
 
