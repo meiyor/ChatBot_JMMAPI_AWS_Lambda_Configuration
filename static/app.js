@@ -136,6 +136,10 @@ class Chatbox {
         this.messages.push(msg1);
         this.updateChatText(chatbox,1)
 
+        document.querySelector('.send__button').disabled = true;
+        document.querySelector('.chatbox__support').disabled = true;
+        chatbox.querySelector('input').disabled = true;
+
         await fetch(server+'/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
@@ -157,6 +161,9 @@ class Chatbox {
             imgEl.style.display = "block";
             r.file_name
 
+            document.querySelector('.send__button').disabled = false;
+            document.querySelector('.chatbox__support').disabled = false;
+            chatbox.querySelector('input').disabled = false;
 
         }).catch((error) => {
             console.error('Error:', error);
